@@ -7,25 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9A26F61720F8F8CA00610D76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A26F61620F8F8CA00610D76 /* AppDelegate.swift */; };
-		9A26F61920F8F8CA00610D76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A26F61820F8F8CA00610D76 /* ViewController.swift */; };
-		9A26F61C20F8F8CA00610D76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A26F61A20F8F8CA00610D76 /* Main.storyboard */; };
-		9A26F61E20F8F8CD00610D76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A26F61D20F8F8CD00610D76 /* Assets.xcassets */; };
-		9A26F62120F8F8CD00610D76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A26F61F20F8F8CD00610D76 /* LaunchScreen.storyboard */; };
+		9A26F65520F8FA1600610D76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A26F65420F8FA1600610D76 /* AppDelegate.swift */; };
+		9A26F65720F8FA1600610D76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A26F65620F8FA1600610D76 /* ViewController.swift */; };
+		9A26F65A20F8FA1600610D76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A26F65820F8FA1600610D76 /* Main.storyboard */; };
+		9A26F65C20F8FA1700610D76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A26F65B20F8FA1700610D76 /* Assets.xcassets */; };
+		9A26F65F20F8FA1700610D76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A26F65D20F8FA1700610D76 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9A26F61320F8F8C900610D76 /* ayBet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ayBet.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A26F61620F8F8CA00610D76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9A26F61820F8F8CA00610D76 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9A26F61B20F8F8CA00610D76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9A26F61D20F8F8CD00610D76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9A26F62020F8F8CD00610D76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9A26F62220F8F8CD00610D76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A26F65120F8FA1600610D76 /* ayBetMVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ayBetMVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A26F65420F8FA1600610D76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9A26F65620F8FA1600610D76 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9A26F65920F8FA1600610D76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9A26F65B20F8FA1700610D76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9A26F65E20F8FA1700610D76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9A26F66020F8FA1700610D76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9A26F61020F8F8C900610D76 /* Frameworks */ = {
+		9A26F64E20F8FA1600610D76 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,71 +35,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9A26F60A20F8F8C900610D76 = {
+		9A26F64820F8FA1600610D76 = {
 			isa = PBXGroup;
 			children = (
-				9A26F61520F8F8C900610D76 /* ayBet */,
-				9A26F61420F8F8C900610D76 /* Products */,
+				9A26F65320F8FA1600610D76 /* ayBetMVC */,
+				9A26F65220F8FA1600610D76 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		9A26F61420F8F8C900610D76 /* Products */ = {
+		9A26F65220F8FA1600610D76 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9A26F61320F8F8C900610D76 /* ayBet.app */,
+				9A26F65120F8FA1600610D76 /* ayBetMVC.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9A26F61520F8F8C900610D76 /* ayBet */ = {
+		9A26F65320F8FA1600610D76 /* ayBetMVC */ = {
 			isa = PBXGroup;
 			children = (
-				9A26F61620F8F8CA00610D76 /* AppDelegate.swift */,
-				9A26F61820F8F8CA00610D76 /* ViewController.swift */,
-				9A26F61A20F8F8CA00610D76 /* Main.storyboard */,
-				9A26F61D20F8F8CD00610D76 /* Assets.xcassets */,
-				9A26F61F20F8F8CD00610D76 /* LaunchScreen.storyboard */,
-				9A26F62220F8F8CD00610D76 /* Info.plist */,
+				9A26F65420F8FA1600610D76 /* AppDelegate.swift */,
+				9A26F65620F8FA1600610D76 /* ViewController.swift */,
+				9A26F65820F8FA1600610D76 /* Main.storyboard */,
+				9A26F65B20F8FA1700610D76 /* Assets.xcassets */,
+				9A26F65D20F8FA1700610D76 /* LaunchScreen.storyboard */,
+				9A26F66020F8FA1700610D76 /* Info.plist */,
 			);
-			path = ayBet;
+			path = ayBetMVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9A26F61220F8F8C900610D76 /* ayBet */ = {
+		9A26F65020F8FA1600610D76 /* ayBetMVC */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9A26F62520F8F8CD00610D76 /* Build configuration list for PBXNativeTarget "ayBet" */;
+			buildConfigurationList = 9A26F66320F8FA1700610D76 /* Build configuration list for PBXNativeTarget "ayBetMVC" */;
 			buildPhases = (
-				9A26F60F20F8F8C900610D76 /* Sources */,
-				9A26F61020F8F8C900610D76 /* Frameworks */,
-				9A26F61120F8F8C900610D76 /* Resources */,
+				9A26F64D20F8FA1600610D76 /* Sources */,
+				9A26F64E20F8FA1600610D76 /* Frameworks */,
+				9A26F64F20F8FA1600610D76 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ayBet;
-			productName = ayBet;
-			productReference = 9A26F61320F8F8C900610D76 /* ayBet.app */;
+			name = ayBetMVC;
+			productName = ayBetMVC;
+			productReference = 9A26F65120F8FA1600610D76 /* ayBetMVC.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		9A26F60B20F8F8C900610D76 /* Project object */ = {
+		9A26F64920F8FA1600610D76 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = everis;
 				TargetAttributes = {
-					9A26F61220F8F8C900610D76 = {
+					9A26F65020F8FA1600610D76 = {
 						CreatedOnToolsVersion = 9.3;
 					};
 				};
 			};
-			buildConfigurationList = 9A26F60E20F8F8C900610D76 /* Build configuration list for PBXProject "ayBet" */;
+			buildConfigurationList = 9A26F64C20F8FA1600610D76 /* Build configuration list for PBXProject "ayBetMVC" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -107,54 +107,54 @@
 				en,
 				Base,
 			);
-			mainGroup = 9A26F60A20F8F8C900610D76;
-			productRefGroup = 9A26F61420F8F8C900610D76 /* Products */;
+			mainGroup = 9A26F64820F8FA1600610D76;
+			productRefGroup = 9A26F65220F8FA1600610D76 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9A26F61220F8F8C900610D76 /* ayBet */,
+				9A26F65020F8FA1600610D76 /* ayBetMVC */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9A26F61120F8F8C900610D76 /* Resources */ = {
+		9A26F64F20F8FA1600610D76 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A26F62120F8F8CD00610D76 /* LaunchScreen.storyboard in Resources */,
-				9A26F61E20F8F8CD00610D76 /* Assets.xcassets in Resources */,
-				9A26F61C20F8F8CA00610D76 /* Main.storyboard in Resources */,
+				9A26F65F20F8FA1700610D76 /* LaunchScreen.storyboard in Resources */,
+				9A26F65C20F8FA1700610D76 /* Assets.xcassets in Resources */,
+				9A26F65A20F8FA1600610D76 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9A26F60F20F8F8C900610D76 /* Sources */ = {
+		9A26F64D20F8FA1600610D76 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A26F61920F8F8CA00610D76 /* ViewController.swift in Sources */,
-				9A26F61720F8F8CA00610D76 /* AppDelegate.swift in Sources */,
+				9A26F65720F8FA1600610D76 /* ViewController.swift in Sources */,
+				9A26F65520F8FA1600610D76 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9A26F61A20F8F8CA00610D76 /* Main.storyboard */ = {
+		9A26F65820F8FA1600610D76 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9A26F61B20F8F8CA00610D76 /* Base */,
+				9A26F65920F8FA1600610D76 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		9A26F61F20F8F8CD00610D76 /* LaunchScreen.storyboard */ = {
+		9A26F65D20F8FA1700610D76 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9A26F62020F8F8CD00610D76 /* Base */,
+				9A26F65E20F8FA1700610D76 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -162,7 +162,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		9A26F62320F8F8CD00610D76 /* Debug */ = {
+		9A26F66120F8FA1700610D76 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -222,7 +222,7 @@
 			};
 			name = Debug;
 		};
-		9A26F62420F8F8CD00610D76 /* Release */ = {
+		9A26F66220F8FA1700610D76 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -276,34 +276,34 @@
 			};
 			name = Release;
 		};
-		9A26F62620F8F8CD00610D76 /* Debug */ = {
+		9A26F66420F8FA1700610D76 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ayBet/Info.plist;
+				INFOPLIST_FILE = ayBetMVC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.everis.ieeeTalk.demo.ayBet;
+				PRODUCT_BUNDLE_IDENTIFIER = com.everis.ieeeTalk.demo.ayBetMVC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		9A26F62720F8F8CD00610D76 /* Release */ = {
+		9A26F66520F8FA1700610D76 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ayBet/Info.plist;
+				INFOPLIST_FILE = ayBetMVC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.everis.ieeeTalk.demo.ayBet;
+				PRODUCT_BUNDLE_IDENTIFIER = com.everis.ieeeTalk.demo.ayBetMVC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -313,25 +313,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9A26F60E20F8F8C900610D76 /* Build configuration list for PBXProject "ayBet" */ = {
+		9A26F64C20F8FA1600610D76 /* Build configuration list for PBXProject "ayBetMVC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9A26F62320F8F8CD00610D76 /* Debug */,
-				9A26F62420F8F8CD00610D76 /* Release */,
+				9A26F66120F8FA1700610D76 /* Debug */,
+				9A26F66220F8FA1700610D76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9A26F62520F8F8CD00610D76 /* Build configuration list for PBXNativeTarget "ayBet" */ = {
+		9A26F66320F8FA1700610D76 /* Build configuration list for PBXNativeTarget "ayBetMVC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9A26F62620F8F8CD00610D76 /* Debug */,
-				9A26F62720F8F8CD00610D76 /* Release */,
+				9A26F66420F8FA1700610D76 /* Debug */,
+				9A26F66520F8FA1700610D76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 9A26F60B20F8F8C900610D76 /* Project object */;
+	rootObject = 9A26F64920F8FA1600610D76 /* Project object */;
 }

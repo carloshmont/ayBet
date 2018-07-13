@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  ayBet
+//  ayBetMVC
 //
 //  Created by Carlos H. Montenegro on 13/07/18.
 //  Copyright © 2018 everis. All rights reserved.
