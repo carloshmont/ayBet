@@ -12,6 +12,7 @@
 		9A26F65A20F8FA1600610D76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A26F65820F8FA1600610D76 /* Main.storyboard */; };
 		9A26F65C20F8FA1700610D76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A26F65B20F8FA1700610D76 /* Assets.xcassets */; };
 		9A26F65F20F8FA1700610D76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A26F65D20F8FA1700610D76 /* LaunchScreen.storyboard */; };
+		9A26F69620F90C9000610D76 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A26F69520F90C9000610D76 /* GoogleService-Info.plist */; };
 		C9321315EAD65AD6B63B8EB3 /* libPods-ayBetMVC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21857CC671F0E9C738D95733 /* libPods-ayBetMVC.a */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		9A26F65B20F8FA1700610D76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A26F65E20F8FA1700610D76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A26F66020F8FA1700610D76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A26F69520F90C9000610D76 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CA8AE82D97A4AB9AD28BB9D5 /* Pods-ayBetMVC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ayBetMVC.release.xcconfig"; path = "../Pods/Target Support Files/Pods-ayBetMVC/Pods-ayBetMVC.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,6 +78,7 @@
 				9A26F65B20F8FA1700610D76 /* Assets.xcassets */,
 				9A26F65D20F8FA1700610D76 /* LaunchScreen.storyboard */,
 				9A26F66020F8FA1700610D76 /* Info.plist */,
+				9A26F69520F90C9000610D76 /* GoogleService-Info.plist */,
 			);
 			path = ayBetMVC;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 				9A26F65F20F8FA1700610D76 /* LaunchScreen.storyboard in Resources */,
 				9A26F65C20F8FA1700610D76 /* Assets.xcassets in Resources */,
 				9A26F65A20F8FA1600610D76 /* Main.storyboard in Resources */,
+				9A26F69620F90C9000610D76 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
