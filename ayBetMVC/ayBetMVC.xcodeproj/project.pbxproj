@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B6F084120F9441C002F0673 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8B6F084020F9441C002F0673 /* GoogleService-Info.plist */; };
+		8B6F084320F952B4002F0673 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B6F084220F952B4002F0673 /* Data.framework */; };
 		9A26F65520F8FA1600610D76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A26F65420F8FA1600610D76 /* AppDelegate.swift */; };
 		9A26F65720F8FA1600610D76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A26F65620F8FA1600610D76 /* ViewController.swift */; };
 		9A26F65A20F8FA1600610D76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A26F65820F8FA1600610D76 /* Main.storyboard */; };
@@ -19,6 +21,10 @@
 /* Begin PBXFileReference section */
 		21857CC671F0E9C738D95733 /* libPods-ayBetMVC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ayBetMVC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		379810047D1FC728CC23258F /* Pods-ayBetMVC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ayBetMVC.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-ayBetMVC/Pods-ayBetMVC.debug.xcconfig"; sourceTree = "<group>"; };
+		8B6F083E20F94193002F0673 /* Data.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Data.framework; sourceTree = "<group>"; };
+		8B6F084020F9441C002F0673 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8B6F084220F952B4002F0673 /* Data.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Data.framework; path = "../../../../Library/Developer/Xcode/DerivedData/ayBet-fssxdlrbharpfaccqkryijxwqkcw/Build/Products/Debug-iphonesimulator/Data.framework"; sourceTree = "<group>"; };
+		8B6F084420F95307002F0673 /* Data.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Data.framework; path = "../../../../Library/Developer/Xcode/DerivedData/ayBet-fssxdlrbharpfaccqkryijxwqkcw/Build/Products/Debug-iphonesimulator/Data.framework"; sourceTree = "<group>"; };
 		9A26F65120F8FA1600610D76 /* ayBetMVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ayBetMVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A26F65420F8FA1600610D76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A26F65620F8FA1600610D76 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +42,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9321315EAD65AD6B63B8EB3 /* libPods-ayBetMVC.a in Frameworks */,
+				8B6F084320F952B4002F0673 /* Data.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +61,7 @@
 		9A26F64820F8FA1600610D76 = {
 			isa = PBXGroup;
 			children = (
+				8B6F084420F95307002F0673 /* Data.framework */,
 				9A26F65320F8FA1600610D76 /* ayBetMVC */,
 				9A26F65220F8FA1600610D76 /* Products */,
 				563BE580881571ACEEEB0754 /* Pods */,
@@ -72,6 +80,7 @@
 		9A26F65320F8FA1600610D76 /* ayBetMVC */ = {
 			isa = PBXGroup;
 			children = (
+				8B6F084020F9441C002F0673 /* GoogleService-Info.plist */,
 				9A26F65420F8FA1600610D76 /* AppDelegate.swift */,
 				9A26F65620F8FA1600610D76 /* ViewController.swift */,
 				9A26F65820F8FA1600610D76 /* Main.storyboard */,
@@ -86,6 +95,8 @@
 		C238CEEC6A3E9E2CFADCB495 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8B6F083E20F94193002F0673 /* Data.framework */,
+				8B6F084220F952B4002F0673 /* Data.framework */,
 				21857CC671F0E9C738D95733 /* libPods-ayBetMVC.a */,
 			);
 			name = Frameworks;
@@ -102,6 +113,8 @@
 				9A26F64D20F8FA1600610D76 /* Sources */,
 				9A26F64E20F8FA1600610D76 /* Frameworks */,
 				9A26F64F20F8FA1600610D76 /* Resources */,
+				5860D1E3545AD25D3CD338C3 /* [CP] Embed Pods Frameworks */,
+				3125EE34FF50868A9FBB88BC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,6 +165,7 @@
 			files = (
 				9A26F65F20F8FA1700610D76 /* LaunchScreen.storyboard in Resources */,
 				9A26F65C20F8FA1700610D76 /* Assets.xcassets in Resources */,
+				8B6F084120F9441C002F0673 /* GoogleService-Info.plist in Resources */,
 				9A26F65A20F8FA1600610D76 /* Main.storyboard in Resources */,
 				9A26F69620F90C9000610D76 /* GoogleService-Info.plist in Resources */,
 			);
@@ -160,6 +174,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3125EE34FF50868A9FBB88BC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-ayBetMVC/Pods-ayBetMVC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5860D1E3545AD25D3CD338C3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-ayBetMVC/Pods-ayBetMVC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E0A7F1D69780294705CD65B7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -332,8 +376,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ayBetMVC/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -351,8 +399,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ayBetMVC/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
