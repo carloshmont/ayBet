@@ -11,6 +11,10 @@
 		9A26F63C20F8F9B200610D76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A26F63A20F8F9B200610D76 /* Main.storyboard */; };
 		9A26F63E20F8F9B300610D76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A26F63D20F8F9B300610D76 /* Assets.xcassets */; };
 		9A26F64120F8F9B300610D76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A26F63F20F8F9B300610D76 /* LaunchScreen.storyboard */; };
+		9A26F68A20F8FFCA00610D76 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A26F68920F8FFCA00610D76 /* CustomNavigationController.swift */; };
+		9A26F68D20F9004A00610D76 /* BetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A26F68C20F9004A00610D76 /* BetListViewController.swift */; };
+		9A26F69020F903BE00610D76 /* MatchHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A26F68F20F903BE00610D76 /* MatchHeaderView.xib */; };
+		9A26F69220F9050100610D76 /* MatchHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A26F69120F9050100610D76 /* MatchHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		9A26F63D20F8F9B300610D76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A26F64020F8F9B300610D76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A26F64220F8F9B300610D76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A26F68920F8FFCA00610D76 /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
+		9A26F68C20F9004A00610D76 /* BetListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetListViewController.swift; sourceTree = "<group>"; };
+		9A26F68F20F903BE00610D76 /* MatchHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchHeaderView.xib; sourceTree = "<group>"; };
+		9A26F69120F9050100610D76 /* MatchHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +76,8 @@
 			children = (
 				9A26F68820F8FB0C00610D76 /* GeneralClasses */,
 				9A26F68720F8FAC300610D76 /* Storyboards */,
+				9A26F68E20F9035E00610D76 /* Xib */,
+				9A26F68B20F9002E00610D76 /* Controller */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -97,8 +107,26 @@
 		9A26F68820F8FB0C00610D76 /* GeneralClasses */ = {
 			isa = PBXGroup;
 			children = (
+				9A26F68920F8FFCA00610D76 /* CustomNavigationController.swift */,
 			);
 			path = GeneralClasses;
+			sourceTree = "<group>";
+		};
+		9A26F68B20F9002E00610D76 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9A26F68C20F9004A00610D76 /* BetListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9A26F68E20F9035E00610D76 /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				9A26F68F20F903BE00610D76 /* MatchHeaderView.xib */,
+				9A26F69120F9050100610D76 /* MatchHeaderView.swift */,
+			);
+			path = Xib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A26F64120F8F9B300610D76 /* LaunchScreen.storyboard in Resources */,
+				9A26F69020F903BE00610D76 /* MatchHeaderView.xib in Resources */,
 				9A26F63E20F8F9B300610D76 /* Assets.xcassets in Resources */,
 				9A26F63C20F8F9B200610D76 /* Main.storyboard in Resources */,
 			);
@@ -172,6 +201,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A26F68D20F9004A00610D76 /* BetListViewController.swift in Sources */,
+				9A26F69220F9050100610D76 /* MatchHeaderView.swift in Sources */,
+				9A26F68A20F8FFCA00610D76 /* CustomNavigationController.swift in Sources */,
 				9A26F63720F8F9B200610D76 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,6 +350,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ayBetMVP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,6 +368,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ayBetMVP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
