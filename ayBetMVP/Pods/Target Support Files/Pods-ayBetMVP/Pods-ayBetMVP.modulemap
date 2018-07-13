@@ -1,6 +1,0 @@
-framework module Pods_ayBetMVP {
-  umbrella header "Pods-ayBetMVP-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -29,7 +29,7 @@ class BetListViewController: UIViewController {
 
 extension BetListViewController {
     
-    private func initialSetup() {
+    fileprivate func initialSetup() {
         title = "ayBet"
 //        betListTableView.dataSource = self
 //        betListTableView.delegate = self

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		320704EB67159FB6A533030A /* libPods-ayBetMVP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8015D7E1FB90826BF2EC625B /* libPods-ayBetMVP.a */; };
 		9A26F63720F8F9B200610D76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A26F63620F8F9B200610D76 /* AppDelegate.swift */; };
 		9A26F63C20F8F9B200610D76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A26F63A20F8F9B200610D76 /* Main.storyboard */; };
 		9A26F63E20F8F9B300610D76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A26F63D20F8F9B300610D76 /* Assets.xcassets */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5DEE88A9A29A2530028B54C2 /* Pods-ayBetMVP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ayBetMVP.release.xcconfig"; path = "../Pods/Target Support Files/Pods-ayBetMVP/Pods-ayBetMVP.release.xcconfig"; sourceTree = "<group>"; };
+		8015D7E1FB90826BF2EC625B /* libPods-ayBetMVP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ayBetMVP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A26F63320F8F9B200610D76 /* ayBetMVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ayBetMVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A26F63620F8F9B200610D76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A26F63B20F8F9B200610D76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -30,8 +33,7 @@
 		9A26F68F20F903BE00610D76 /* MatchHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchHeaderView.xib; sourceTree = "<group>"; };
 		9A26F69120F9050100610D76 /* MatchHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchHeaderView.swift; sourceTree = "<group>"; };
 		9A26F69320F906C300610D76 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		A252B8172BF6312378568DC6 /* Pods-ayBetMVP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ayBetMVP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ayBetMVP/Pods-ayBetMVP.debug.xcconfig"; sourceTree = "<group>"; };
-		AD6F8F8561BD73D69DE9B404 /* Pods-ayBetMVP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ayBetMVP.release.xcconfig"; path = "Pods/Target Support Files/Pods-ayBetMVP/Pods-ayBetMVP.release.xcconfig"; sourceTree = "<group>"; };
+		EE07412FA12D4D4CE18C1A04 /* Pods-ayBetMVP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ayBetMVP.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-ayBetMVP/Pods-ayBetMVP.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +41,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				320704EB67159FB6A533030A /* libPods-ayBetMVP.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		376F8D17CABA6E7266894216 /* Frameworks */ = {
+		3F49369F20D47DECC766BA09 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				EE07412FA12D4D4CE18C1A04 /* Pods-ayBetMVP.debug.xcconfig */,
+				5DEE88A9A29A2530028B54C2 /* Pods-ayBetMVP.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		9A26F62A20F8F9B200610D76 = {
@@ -57,8 +62,8 @@
 			children = (
 				9A26F63520F8F9B200610D76 /* ayBetMVP */,
 				9A26F63420F8F9B200610D76 /* Products */,
-				AA47EB6160588564B45A986C /* Pods */,
-				376F8D17CABA6E7266894216 /* Frameworks */,
+				3F49369F20D47DECC766BA09 /* Pods */,
+				EAC33DD863C30C5369CBACCD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,13 +148,12 @@
 			path = Xib;
 			sourceTree = "<group>";
 		};
-		AA47EB6160588564B45A986C /* Pods */ = {
+		EAC33DD863C30C5369CBACCD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A252B8172BF6312378568DC6 /* Pods-ayBetMVP.debug.xcconfig */,
-				AD6F8F8561BD73D69DE9B404 /* Pods-ayBetMVP.release.xcconfig */,
+				8015D7E1FB90826BF2EC625B /* libPods-ayBetMVP.a */,
 			);
-			name = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,7 +163,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A26F64520F8F9B300610D76 /* Build configuration list for PBXNativeTarget "ayBetMVP" */;
 			buildPhases = (
-				1C8E41348D50FFA0DBEBD63D /* [CP] Check Pods Manifest.lock */,
+				1732988F5E50407CCE82F073 /* [CP] Check Pods Manifest.lock */,
 				9A26F62F20F8F9B200610D76 /* Sources */,
 				9A26F63020F8F9B200610D76 /* Frameworks */,
 				9A26F63120F8F9B200610D76 /* Resources */,
@@ -222,7 +226,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1C8E41348D50FFA0DBEBD63D /* [CP] Check Pods Manifest.lock */ = {
+		1732988F5E50407CCE82F073 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -392,12 +396,12 @@
 		};
 		9A26F64620F8F9B300610D76 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A252B8172BF6312378568DC6 /* Pods-ayBetMVP.debug.xcconfig */;
+			baseConfigurationReference = EE07412FA12D4D4CE18C1A04 /* Pods-ayBetMVP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ayBetMVP/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -411,12 +415,12 @@
 		};
 		9A26F64720F8F9B300610D76 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AD6F8F8561BD73D69DE9B404 /* Pods-ayBetMVP.release.xcconfig */;
+			baseConfigurationReference = 5DEE88A9A29A2530028B54C2 /* Pods-ayBetMVP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ayBetMVP/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
