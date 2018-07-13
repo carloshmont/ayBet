@@ -17,6 +17,12 @@
 		9A26F69020F903BE00610D76 /* MatchHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A26F68F20F903BE00610D76 /* MatchHeaderView.xib */; };
 		9A26F69220F9050100610D76 /* MatchHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A26F69120F9050100610D76 /* MatchHeaderView.swift */; };
 		9A26F69420F906C400610D76 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A26F69320F906C300610D76 /* GoogleService-Info.plist */; };
+		9A26F69A20F92C3600610D76 /* ModalPresentationTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A26F69820F92C3600610D76 /* ModalPresentationTransitioningDelegate.swift */; };
+		9A26F69B20F92C3600610D76 /* ModalPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A26F69920F92C3600610D76 /* ModalPresentationController.swift */; };
+		9A26F69F20F92DED00610D76 /* BetListViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A26F69E20F92DED00610D76 /* BetListViewRouter.swift */; };
+		9A26F6A220F92EF200610D76 /* PlaceBetViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A26F6A120F92EF200610D76 /* PlaceBetViewData.swift */; };
+		9A26F6A520F930F800610D76 /* BetListViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A26F6A420F930F800610D76 /* BetListViewPresenter.swift */; };
+		9A26F6A720F932E100610D76 /* PlaceBetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A26F6A620F932E100610D76 /* PlaceBetViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +39,12 @@
 		9A26F68F20F903BE00610D76 /* MatchHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchHeaderView.xib; sourceTree = "<group>"; };
 		9A26F69120F9050100610D76 /* MatchHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchHeaderView.swift; sourceTree = "<group>"; };
 		9A26F69320F906C300610D76 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9A26F69820F92C3600610D76 /* ModalPresentationTransitioningDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalPresentationTransitioningDelegate.swift; sourceTree = "<group>"; };
+		9A26F69920F92C3600610D76 /* ModalPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalPresentationController.swift; sourceTree = "<group>"; };
+		9A26F69E20F92DED00610D76 /* BetListViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetListViewRouter.swift; sourceTree = "<group>"; };
+		9A26F6A120F92EF200610D76 /* PlaceBetViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceBetViewData.swift; sourceTree = "<group>"; };
+		9A26F6A420F930F800610D76 /* BetListViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetListViewPresenter.swift; sourceTree = "<group>"; };
+		9A26F6A620F932E100610D76 /* PlaceBetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceBetViewController.swift; sourceTree = "<group>"; };
 		EE07412FA12D4D4CE18C1A04 /* Pods-ayBetMVP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ayBetMVP.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-ayBetMVP/Pods-ayBetMVP.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				9A26F68420F8FAA500610D76 /* View */,
+				9A26F69D20F92DBF00610D76 /* Router */,
 				9A26F68520F8FAAA00610D76 /* Presenter */,
 				9A26F68620F8FAB500610D76 /* Model */,
 				9A26F63620F8F9B200610D76 /* AppDelegate.swift */,
@@ -93,9 +106,8 @@
 		9A26F68420F8FAA500610D76 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				9A26F68820F8FB0C00610D76 /* GeneralClasses */,
-				9A26F68720F8FAC300610D76 /* Storyboards */,
-				9A26F68E20F9035E00610D76 /* Xib */,
+				9A26F69C20F92D9D00610D76 /* Support */,
+				9A26F6A020F92ECA00610D76 /* Data */,
 				9A26F68B20F9002E00610D76 /* Controller */,
 			);
 			path = View;
@@ -104,6 +116,7 @@
 		9A26F68520F8FAAA00610D76 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				9A26F6A420F930F800610D76 /* BetListViewPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -126,6 +139,8 @@
 		9A26F68820F8FB0C00610D76 /* GeneralClasses */ = {
 			isa = PBXGroup;
 			children = (
+				9A26F69820F92C3600610D76 /* ModalPresentationTransitioningDelegate.swift */,
+				9A26F69920F92C3600610D76 /* ModalPresentationController.swift */,
 				9A26F68920F8FFCA00610D76 /* CustomNavigationController.swift */,
 			);
 			path = GeneralClasses;
@@ -135,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				9A26F68C20F9004A00610D76 /* BetListViewController.swift */,
+				9A26F6A620F932E100610D76 /* PlaceBetViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -146,6 +162,32 @@
 				9A26F69120F9050100610D76 /* MatchHeaderView.swift */,
 			);
 			path = Xib;
+			sourceTree = "<group>";
+		};
+		9A26F69C20F92D9D00610D76 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				9A26F68720F8FAC300610D76 /* Storyboards */,
+				9A26F68820F8FB0C00610D76 /* GeneralClasses */,
+				9A26F68E20F9035E00610D76 /* Xib */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		9A26F69D20F92DBF00610D76 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				9A26F69E20F92DED00610D76 /* BetListViewRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		9A26F6A020F92ECA00610D76 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				9A26F6A120F92EF200610D76 /* PlaceBetViewData.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		EAC33DD863C30C5369CBACCD /* Frameworks */ = {
@@ -251,10 +293,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A26F6A720F932E100610D76 /* PlaceBetViewController.swift in Sources */,
 				9A26F68D20F9004A00610D76 /* BetListViewController.swift in Sources */,
+				9A26F69B20F92C3600610D76 /* ModalPresentationController.swift in Sources */,
 				9A26F69220F9050100610D76 /* MatchHeaderView.swift in Sources */,
+				9A26F69A20F92C3600610D76 /* ModalPresentationTransitioningDelegate.swift in Sources */,
+				9A26F6A520F930F800610D76 /* BetListViewPresenter.swift in Sources */,
 				9A26F68A20F8FFCA00610D76 /* CustomNavigationController.swift in Sources */,
 				9A26F63720F8F9B200610D76 /* AppDelegate.swift in Sources */,
+				9A26F6A220F92EF200610D76 /* PlaceBetViewData.swift in Sources */,
+				9A26F69F20F92DED00610D76 /* BetListViewRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

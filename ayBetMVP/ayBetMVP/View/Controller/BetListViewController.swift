@@ -8,17 +8,42 @@
 
 import UIKit
 
+@objc protocol ViewProtocol {
+    @objc optional func startLoading()
+    @objc optional func finishedLoading()
+}
+
+protocol BetListViewProtocol: class, ViewProtocol {
+    func updateView()
+}
+
 class BetListViewController: UIViewController {
 
+    var presenter: BetListViewPresenterProtocol!
+    
     @IBOutlet fileprivate weak var betListTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         initialSetup()
+        configurateView()
     }
 
+    @IBAction func didTapPlaceBet(_ sender: UIBarButtonItem) {
+        presenter.placeBet()
+    }
 }
 
+// MARK:- View protocol methods
+extension BetListViewController: BetListViewProtocol {
+    
+    func updateView() {
+        
+    }
+    
+}
+
+// MARK:- Table view delegate methods
 extension BetListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let nib = UINib(nibName: "MatchHeaderView", bundle: nil)
@@ -27,7 +52,7 @@ extension BetListViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80
+        return 60
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -35,6 +60,7 @@ extension BetListViewController: UITableViewDelegate {
     }
 }
 
+// MARK:- Table view data source methods
 extension BetListViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -51,11 +77,17 @@ extension BetListViewController: UITableViewDataSource {
     
 }
 
+// MARK:- View setup methods
 extension BetListViewController {
     
     fileprivate func initialSetup() {
         betListTableView.dataSource = self
         betListTableView.delegate = self
+    }
+    
+    fileprivate func configurateView() {
+        let router = BetListViewRouter(withView: self)
+        presenter = BetListViewPresenter(withView: self, andRouter: router)
     }
     
 }
