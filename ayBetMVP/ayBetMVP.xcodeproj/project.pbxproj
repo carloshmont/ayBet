@@ -15,6 +15,7 @@
 		9A26F68D20F9004A00610D76 /* BetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A26F68C20F9004A00610D76 /* BetListViewController.swift */; };
 		9A26F69020F903BE00610D76 /* MatchHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A26F68F20F903BE00610D76 /* MatchHeaderView.xib */; };
 		9A26F69220F9050100610D76 /* MatchHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A26F69120F9050100610D76 /* MatchHeaderView.swift */; };
+		9A26F69420F906C400610D76 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A26F69320F906C300610D76 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,9 @@
 		9A26F68C20F9004A00610D76 /* BetListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetListViewController.swift; sourceTree = "<group>"; };
 		9A26F68F20F903BE00610D76 /* MatchHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchHeaderView.xib; sourceTree = "<group>"; };
 		9A26F69120F9050100610D76 /* MatchHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchHeaderView.swift; sourceTree = "<group>"; };
+		9A26F69320F906C300610D76 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A252B8172BF6312378568DC6 /* Pods-ayBetMVP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ayBetMVP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ayBetMVP/Pods-ayBetMVP.debug.xcconfig"; sourceTree = "<group>"; };
+		AD6F8F8561BD73D69DE9B404 /* Pods-ayBetMVP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ayBetMVP.release.xcconfig"; path = "Pods/Target Support Files/Pods-ayBetMVP/Pods-ayBetMVP.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,11 +45,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		376F8D17CABA6E7266894216 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9A26F62A20F8F9B200610D76 = {
 			isa = PBXGroup;
 			children = (
 				9A26F63520F8F9B200610D76 /* ayBetMVP */,
 				9A26F63420F8F9B200610D76 /* Products */,
+				AA47EB6160588564B45A986C /* Pods */,
+				376F8D17CABA6E7266894216 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +80,7 @@
 				9A26F63D20F8F9B300610D76 /* Assets.xcassets */,
 				9A26F63F20F8F9B300610D76 /* LaunchScreen.storyboard */,
 				9A26F64220F8F9B300610D76 /* Info.plist */,
+				9A26F69320F906C300610D76 /* GoogleService-Info.plist */,
 			);
 			path = ayBetMVP;
 			sourceTree = "<group>";
@@ -129,6 +143,15 @@
 			path = Xib;
 			sourceTree = "<group>";
 		};
+		AA47EB6160588564B45A986C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A252B8172BF6312378568DC6 /* Pods-ayBetMVP.debug.xcconfig */,
+				AD6F8F8561BD73D69DE9B404 /* Pods-ayBetMVP.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -136,6 +159,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A26F64520F8F9B300610D76 /* Build configuration list for PBXNativeTarget "ayBetMVP" */;
 			buildPhases = (
+				1C8E41348D50FFA0DBEBD63D /* [CP] Check Pods Manifest.lock */,
 				9A26F62F20F8F9B200610D76 /* Sources */,
 				9A26F63020F8F9B200610D76 /* Frameworks */,
 				9A26F63120F8F9B200610D76 /* Resources */,
@@ -189,12 +213,34 @@
 			files = (
 				9A26F64120F8F9B300610D76 /* LaunchScreen.storyboard in Resources */,
 				9A26F69020F903BE00610D76 /* MatchHeaderView.xib in Resources */,
+				9A26F69420F906C400610D76 /* GoogleService-Info.plist in Resources */,
 				9A26F63E20F8F9B300610D76 /* Assets.xcassets in Resources */,
 				9A26F63C20F8F9B200610D76 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C8E41348D50FFA0DBEBD63D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ayBetMVP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9A26F62F20F8F9B200610D76 /* Sources */ = {
@@ -346,6 +392,7 @@
 		};
 		9A26F64620F8F9B300610D76 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A252B8172BF6312378568DC6 /* Pods-ayBetMVP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -355,7 +402,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.everis.ieeeTalk.demo.ayBetMVP;
+				PRODUCT_BUNDLE_IDENTIFIER = com.everis.ieeeTalk.demo.ayBet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -364,6 +411,7 @@
 		};
 		9A26F64720F8F9B300610D76 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD6F8F8561BD73D69DE9B404 /* Pods-ayBetMVP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -373,7 +421,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.everis.ieeeTalk.demo.ayBetMVP;
+				PRODUCT_BUNDLE_IDENTIFIER = com.everis.ieeeTalk.demo.ayBet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

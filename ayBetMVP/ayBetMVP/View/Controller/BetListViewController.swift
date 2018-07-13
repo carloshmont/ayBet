@@ -19,20 +19,20 @@ class BetListViewController: UIViewController {
 
 }
 
-extension BetListViewController: UITableViewDelegate {
-    
-}
-
-extension BetListViewController: UITableViewDataSource {
-    
-}
+//extension BetListViewController: UITableViewDelegate {
+//    
+//}
+//
+//extension BetListViewController: UITableViewDataSource {
+//    
+//}
 
 extension BetListViewController {
     
     private func initialSetup() {
         title = "ayBet"
-        betListTableView.dataSource = self
-        betListTableView.delegate = self
+//        betListTableView.dataSource = self
+//        betListTableView.delegate = self
     }
     
 }
