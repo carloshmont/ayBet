@@ -11,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--ayBet-->
+        <!--ayBet!-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="BetListViewController" customModule="ayBetMVP" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,9 +19,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tQa-Va-zFA">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tQa-Va-zFA">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="betCell" rowHeight="60" id="Cfk-nx-pNR">
                                         <rect key="frame" x="0.0" y="28" width="375" height="60"/>
@@ -36,7 +36,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S/.200.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRQ-Fz-iFb">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S/ 200.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRQ-Fz-iFb">
                                                     <rect key="frame" x="282" y="19.5" width="64" height="20"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                     <color key="textColor" red="1" green="0.64433013756816826" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -88,7 +88,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="ayBet" id="98X-W9-fC7">
+                    <navigationItem key="navigationItem" title="ayBet!" id="98X-W9-fC7">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="t7z-zn-WUq">
                             <color key="tintColor" red="1" green="0.64433013760000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <connections>
@@ -135,6 +135,9 @@
                                                 <integer key="value" value="20"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didTapPlaceBetButton:" destination="J8U-qU-Bn8" eventType="touchUpInside" id="rjH-c7-6BP"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elige tu equipo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGN-Ib-NOi">
                                         <rect key="frame" x="45" y="187" width="285" height="20.5"/>
@@ -188,11 +191,15 @@
                                             <segment title="Inglaterra"/>
                                         </segments>
                                         <color key="tintColor" red="1" green="0.64433013760000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <connections>
+                                            <action selector="didSelectOption:" destination="J8U-qU-Bn8" eventType="valueChanged" id="kIq-W8-og0"/>
+                                        </connections>
                                     </segmentedControl>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="77H-1F-mif" secondAttribute="trailing" constant="45" id="B1g-vq-K6S"/>
+                                    <constraint firstItem="9p7-iG-5kh" firstAttribute="leading" secondItem="6LN-K0-yBD" secondAttribute="leading" constant="48.5" id="Eng-41-aFg"/>
                                     <constraint firstAttribute="trailing" secondItem="Wd3-Xy-52o" secondAttribute="trailing" constant="45" id="Nze-9c-fsR"/>
                                     <constraint firstAttribute="trailing" secondItem="MGN-Ib-NOi" secondAttribute="trailing" constant="45" id="Rol-HU-QAV"/>
                                     <constraint firstItem="9p7-iG-5kh" firstAttribute="centerX" secondItem="6LN-K0-yBD" secondAttribute="centerX" id="TVB-4U-bzu"/>
@@ -205,6 +212,7 @@
                                     <constraint firstAttribute="height" constant="352" id="mR2-H2-ppq"/>
                                     <constraint firstItem="77H-1F-mif" firstAttribute="leading" secondItem="6LN-K0-yBD" secondAttribute="leading" constant="45" id="nx5-xz-DEX"/>
                                     <constraint firstItem="MGN-Ib-NOi" firstAttribute="leading" secondItem="6LN-K0-yBD" secondAttribute="leading" constant="45" id="ojW-Fx-Aie"/>
+                                    <constraint firstAttribute="trailing" secondItem="9p7-iG-5kh" secondAttribute="trailing" constant="48.5" id="pIt-7i-Wnb"/>
                                     <constraint firstItem="9p7-iG-5kh" firstAttribute="top" secondItem="77H-1F-mif" secondAttribute="bottom" constant="30" id="qOC-5G-vGS"/>
                                     <constraint firstAttribute="trailing" secondItem="ETn-bC-C8k" secondAttribute="trailing" constant="45" id="wGW-ok-BJ9"/>
                                 </constraints>
@@ -219,6 +227,11 @@
                         <viewLayoutGuide key="safeArea" id="y15-Ka-4y1"/>
                     </view>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="amountTextField" destination="cUF-MU-Bhx" id="HXW-b2-gM1"/>
+                        <outlet property="placeBetButton" destination="ETn-bC-C8k" id="dcH-w0-FyZ"/>
+                        <outlet property="teamSegmentedControl" destination="Wd3-Xy-52o" id="rjE-rD-dxq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VmO-Lt-kUP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

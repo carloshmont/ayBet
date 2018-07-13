@@ -26,7 +26,7 @@ class BetListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         initialSetup()
-        configurateView()
+        configureView()
     }
 
     @IBAction func didTapPlaceBet(_ sender: UIBarButtonItem) {
@@ -52,11 +52,11 @@ extension BetListViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 60
+        return 50
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 100
+        return 90
     }
 }
 
@@ -68,7 +68,7 @@ extension BetListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -85,7 +85,7 @@ extension BetListViewController {
         betListTableView.delegate = self
     }
     
-    fileprivate func configurateView() {
+    fileprivate func configureView() {
         let router = BetListViewRouter(withView: self)
         presenter = BetListViewPresenter(withView: self, andRouter: router)
     }

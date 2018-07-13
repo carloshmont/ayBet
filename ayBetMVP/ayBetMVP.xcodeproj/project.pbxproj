@@ -23,6 +23,8 @@
 		9A26F6A220F92EF200610D76 /* PlaceBetViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A26F6A120F92EF200610D76 /* PlaceBetViewData.swift */; };
 		9A26F6A520F930F800610D76 /* BetListViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A26F6A420F930F800610D76 /* BetListViewPresenter.swift */; };
 		9A26F6A720F932E100610D76 /* PlaceBetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A26F6A620F932E100610D76 /* PlaceBetViewController.swift */; };
+		9A26F6AF20F9462700610D76 /* PlaceBetViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A26F6AE20F9462700610D76 /* PlaceBetViewPresenter.swift */; };
+		9A26F6B120F9473D00610D76 /* PlaceBetViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A26F6B020F9473D00610D76 /* PlaceBetViewRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		9A26F6A120F92EF200610D76 /* PlaceBetViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceBetViewData.swift; sourceTree = "<group>"; };
 		9A26F6A420F930F800610D76 /* BetListViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetListViewPresenter.swift; sourceTree = "<group>"; };
 		9A26F6A620F932E100610D76 /* PlaceBetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceBetViewController.swift; sourceTree = "<group>"; };
+		9A26F6AE20F9462700610D76 /* PlaceBetViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceBetViewPresenter.swift; sourceTree = "<group>"; };
+		9A26F6B020F9473D00610D76 /* PlaceBetViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceBetViewRouter.swift; sourceTree = "<group>"; };
 		EE07412FA12D4D4CE18C1A04 /* Pods-ayBetMVP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ayBetMVP.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-ayBetMVP/Pods-ayBetMVP.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,7 +120,8 @@
 		9A26F68520F8FAAA00610D76 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				9A26F6A420F930F800610D76 /* BetListViewPresenter.swift */,
+				9A26F6AB20F945FF00610D76 /* PlaceBet */,
+				9A26F6AA20F945F900610D76 /* BetList */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -139,8 +144,7 @@
 		9A26F68820F8FB0C00610D76 /* GeneralClasses */ = {
 			isa = PBXGroup;
 			children = (
-				9A26F69820F92C3600610D76 /* ModalPresentationTransitioningDelegate.swift */,
-				9A26F69920F92C3600610D76 /* ModalPresentationController.swift */,
+				9A26F6A920F9427C00610D76 /* Presentation */,
 				9A26F68920F8FFCA00610D76 /* CustomNavigationController.swift */,
 			);
 			path = GeneralClasses;
@@ -149,8 +153,8 @@
 		9A26F68B20F9002E00610D76 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				9A26F68C20F9004A00610D76 /* BetListViewController.swift */,
-				9A26F6A620F932E100610D76 /* PlaceBetViewController.swift */,
+				9A26F6AD20F9460D00610D76 /* PlaceBet */,
+				9A26F6AC20F9460900610D76 /* BetList */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -177,7 +181,8 @@
 		9A26F69D20F92DBF00610D76 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				9A26F69E20F92DED00610D76 /* BetListViewRouter.swift */,
+				9A26F6B320F947B400610D76 /* BetList */,
+				9A26F6B220F947AE00610D76 /* PlaceBet */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -188,6 +193,63 @@
 				9A26F6A120F92EF200610D76 /* PlaceBetViewData.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		9A26F6A920F9427C00610D76 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				9A26F69820F92C3600610D76 /* ModalPresentationTransitioningDelegate.swift */,
+				9A26F69920F92C3600610D76 /* ModalPresentationController.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		9A26F6AA20F945F900610D76 /* BetList */ = {
+			isa = PBXGroup;
+			children = (
+				9A26F6A420F930F800610D76 /* BetListViewPresenter.swift */,
+			);
+			path = BetList;
+			sourceTree = "<group>";
+		};
+		9A26F6AB20F945FF00610D76 /* PlaceBet */ = {
+			isa = PBXGroup;
+			children = (
+				9A26F6AE20F9462700610D76 /* PlaceBetViewPresenter.swift */,
+			);
+			path = PlaceBet;
+			sourceTree = "<group>";
+		};
+		9A26F6AC20F9460900610D76 /* BetList */ = {
+			isa = PBXGroup;
+			children = (
+				9A26F68C20F9004A00610D76 /* BetListViewController.swift */,
+			);
+			path = BetList;
+			sourceTree = "<group>";
+		};
+		9A26F6AD20F9460D00610D76 /* PlaceBet */ = {
+			isa = PBXGroup;
+			children = (
+				9A26F6A620F932E100610D76 /* PlaceBetViewController.swift */,
+			);
+			path = PlaceBet;
+			sourceTree = "<group>";
+		};
+		9A26F6B220F947AE00610D76 /* PlaceBet */ = {
+			isa = PBXGroup;
+			children = (
+				9A26F6B020F9473D00610D76 /* PlaceBetViewRouter.swift */,
+			);
+			path = PlaceBet;
+			sourceTree = "<group>";
+		};
+		9A26F6B320F947B400610D76 /* BetList */ = {
+			isa = PBXGroup;
+			children = (
+				9A26F69E20F92DED00610D76 /* BetListViewRouter.swift */,
+			);
+			path = BetList;
 			sourceTree = "<group>";
 		};
 		EAC33DD863C30C5369CBACCD /* Frameworks */ = {
@@ -294,7 +356,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A26F6A720F932E100610D76 /* PlaceBetViewController.swift in Sources */,
+				9A26F6AF20F9462700610D76 /* PlaceBetViewPresenter.swift in Sources */,
 				9A26F68D20F9004A00610D76 /* BetListViewController.swift in Sources */,
+				9A26F6B120F9473D00610D76 /* PlaceBetViewRouter.swift in Sources */,
 				9A26F69B20F92C3600610D76 /* ModalPresentationController.swift in Sources */,
 				9A26F69220F9050100610D76 /* MatchHeaderView.swift in Sources */,
 				9A26F69A20F92C3600610D76 /* ModalPresentationTransitioningDelegate.swift in Sources */,
@@ -448,6 +512,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UH6DXP9SXY;
 				INFOPLIST_FILE = ayBetMVP/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -467,6 +532,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UH6DXP9SXY;
 				INFOPLIST_FILE = ayBetMVP/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
