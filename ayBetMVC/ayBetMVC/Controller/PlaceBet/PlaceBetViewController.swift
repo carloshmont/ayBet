@@ -90,7 +90,7 @@ extension PlaceBetViewController {
 
     func placeBet(withAmmount amount: String) {
         guard let amountDouble = Double(amount) else { return }
-        service.setBet(amount: amountDouble, idTeam: selectedTeam.rawValue, user: "Karl", flag: selectedFlag.rawValue) { (status, error) in
+        service.setBet(amount: amountDouble, idTeam: selectedTeam.rawValue, user: "elpaps", flag: selectedFlag.rawValue) { (status, error) in
             if let success = status {
                 if success {
                     self.dismiss(animated: true, completion: nil)

@@ -13,6 +13,7 @@
 		8BA2015020F9A55400B4E04F /* BetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA2014F20F9A55400B4E04F /* BetListViewController.swift */; };
 		8BA2015220F9A5F900B4E04F /* BetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA2015120F9A5F900B4E04F /* BetTableViewCell.swift */; };
 		8BA2015520F9AD7200B4E04F /* PlaceBetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA2015420F9AD7200B4E04F /* PlaceBetViewController.swift */; };
+		8BA2015820F9BEBC00B4E04F /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA2015720F9BEBC00B4E04F /* CustomNavigationController.swift */; };
 		9A26F65520F8FA1600610D76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A26F65420F8FA1600610D76 /* AppDelegate.swift */; };
 		9A26F65720F8FA1600610D76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A26F65620F8FA1600610D76 /* ViewController.swift */; };
 		9A26F65A20F8FA1600610D76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A26F65820F8FA1600610D76 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 		8BA2014F20F9A55400B4E04F /* BetListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetListViewController.swift; sourceTree = "<group>"; };
 		8BA2015120F9A5F900B4E04F /* BetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BetTableViewCell.swift; sourceTree = "<group>"; };
 		8BA2015420F9AD7200B4E04F /* PlaceBetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceBetViewController.swift; sourceTree = "<group>"; };
+		8BA2015720F9BEBC00B4E04F /* CustomNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 		9A26F65120F8FA1600610D76 /* ayBetMVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ayBetMVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A26F65420F8FA1600610D76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A26F65620F8FA1600610D76 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 		8BA2014820F9A45900B4E04F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8BA2015620F9BEA100B4E04F /* GeneralClasses */,
 				8BA2015320F9AD4000B4E04F /* PlaceBet */,
 				8BA2015120F9A5F900B4E04F /* BetTableViewCell.swift */,
 				8BA2014F20F9A55400B4E04F /* BetListViewController.swift */,
@@ -101,6 +104,14 @@
 				8BA2015420F9AD7200B4E04F /* PlaceBetViewController.swift */,
 			);
 			path = PlaceBet;
+			sourceTree = "<group>";
+		};
+		8BA2015620F9BEA100B4E04F /* GeneralClasses */ = {
+			isa = PBXGroup;
+			children = (
+				8BA2015720F9BEBC00B4E04F /* CustomNavigationController.swift */,
+			);
+			path = GeneralClasses;
 			sourceTree = "<group>";
 		};
 		9A26F64820F8FA1600610D76 = {
@@ -296,6 +307,7 @@
 				8BA2015020F9A55400B4E04F /* BetListViewController.swift in Sources */,
 				9A26F6CB20F95E0B00610D76 /* Model.swift in Sources */,
 				8BA2014D20F9A4D000B4E04F /* MatchHeaderView.swift in Sources */,
+				8BA2015820F9BEBC00B4E04F /* CustomNavigationController.swift in Sources */,
 				9A26F6CC20F95E0B00610D76 /* FirebaseApiImpl.swift in Sources */,
 				9A26F65720F8FA1600610D76 /* ViewController.swift in Sources */,
 				8BA2015220F9A5F900B4E04F /* BetTableViewCell.swift in Sources */,
@@ -446,7 +458,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UH6DXP9SXY;
+				DEVELOPMENT_TEAM = 2292WAB8LU;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -470,7 +482,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UH6DXP9SXY;
+				DEVELOPMENT_TEAM = 2292WAB8LU;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
