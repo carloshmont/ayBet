@@ -25,8 +25,6 @@
 		9A26F6A720F932E100610D76 /* PlaceBetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A26F6A620F932E100610D76 /* PlaceBetViewController.swift */; };
 		9A26F6AF20F9462700610D76 /* PlaceBetViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A26F6AE20F9462700610D76 /* PlaceBetViewPresenter.swift */; };
 		9A26F6B120F9473D00610D76 /* PlaceBetViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A26F6B020F9473D00610D76 /* PlaceBetViewRouter.swift */; };
-		9A26F6D120F95E3C00610D76 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A26F6CF20F95E3C00610D76 /* Model.swift */; };
-		9A26F6D220F95E3C00610D76 /* FirebaseApiImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A26F6D020F95E3C00610D76 /* FirebaseApiImpl.swift */; };
 		9AB9115720F9642B00A33FD8 /* BetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB9115620F9642B00A33FD8 /* BetTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,8 +50,6 @@
 		9A26F6A620F932E100610D76 /* PlaceBetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceBetViewController.swift; sourceTree = "<group>"; };
 		9A26F6AE20F9462700610D76 /* PlaceBetViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceBetViewPresenter.swift; sourceTree = "<group>"; };
 		9A26F6B020F9473D00610D76 /* PlaceBetViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceBetViewRouter.swift; sourceTree = "<group>"; };
-		9A26F6CF20F95E3C00610D76 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		9A26F6D020F95E3C00610D76 /* FirebaseApiImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseApiImpl.swift; sourceTree = "<group>"; };
 		9AB9115620F9642B00A33FD8 /* BetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetTableViewCell.swift; sourceTree = "<group>"; };
 		EE07412FA12D4D4CE18C1A04 /* Pods-ayBetMVP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ayBetMVP.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-ayBetMVP/Pods-ayBetMVP.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,7 +100,6 @@
 				9A26F69D20F92DBF00610D76 /* Router */,
 				9A26F68520F8FAAA00610D76 /* Presenter */,
 				9A26F68620F8FAB500610D76 /* Model */,
-				9A26F6CD20F95E3C00610D76 /* Data */,
 				9A26F63620F8F9B200610D76 /* AppDelegate.swift */,
 				9A26F63D20F8F9B300610D76 /* Assets.xcassets */,
 				9A26F63F20F8F9B300610D76 /* LaunchScreen.storyboard */,
@@ -260,24 +255,6 @@
 			path = BetList;
 			sourceTree = "<group>";
 		};
-		9A26F6CD20F95E3C00610D76 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				9A26F6CE20F95E3C00610D76 /* Firebase */,
-			);
-			name = Data;
-			path = Data/Data;
-			sourceTree = "<group>";
-		};
-		9A26F6CE20F95E3C00610D76 /* Firebase */ = {
-			isa = PBXGroup;
-			children = (
-				9A26F6CF20F95E3C00610D76 /* Model.swift */,
-				9A26F6D020F95E3C00610D76 /* FirebaseApiImpl.swift */,
-			);
-			path = Firebase;
-			sourceTree = "<group>";
-		};
 		EAC33DD863C30C5369CBACCD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -297,6 +274,8 @@
 				9A26F62F20F8F9B200610D76 /* Sources */,
 				9A26F63020F8F9B200610D76 /* Frameworks */,
 				9A26F63120F8F9B200610D76 /* Resources */,
+				B0AED61D82291EA0F72E39AE /* [CP] Embed Pods Frameworks */,
+				55D9DBBF8E481C52FF70A5B4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -374,6 +353,36 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		55D9DBBF8E481C52FF70A5B4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-ayBetMVP/Pods-ayBetMVP-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0AED61D82291EA0F72E39AE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-ayBetMVP/Pods-ayBetMVP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -388,14 +397,12 @@
 				9A26F6B120F9473D00610D76 /* PlaceBetViewRouter.swift in Sources */,
 				9A26F69B20F92C3600610D76 /* ModalPresentationController.swift in Sources */,
 				9A26F69220F9050100610D76 /* MatchHeaderView.swift in Sources */,
-				9A26F6D120F95E3C00610D76 /* Model.swift in Sources */,
 				9A26F69A20F92C3600610D76 /* ModalPresentationTransitioningDelegate.swift in Sources */,
 				9A26F6A520F930F800610D76 /* BetListViewPresenter.swift in Sources */,
 				9A26F68A20F8FFCA00610D76 /* CustomNavigationController.swift in Sources */,
 				9A26F63720F8F9B200610D76 /* AppDelegate.swift in Sources */,
 				9A26F6A220F92EF200610D76 /* PlaceBetViewData.swift in Sources */,
 				9A26F69F20F92DED00610D76 /* BetListViewRouter.swift in Sources */,
-				9A26F6D220F95E3C00610D76 /* FirebaseApiImpl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

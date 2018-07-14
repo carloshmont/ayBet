@@ -25,13 +25,6 @@
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
-		<key>Pods-Data.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-			<key>orderHint</key>
-			<integer>7</integer>
-		</dict>
 		<key>Pods-ayBetMVC.xcscheme</key>
 		<dict>
 			<key>isShown</key>

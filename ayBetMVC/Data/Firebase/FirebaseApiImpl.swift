@@ -29,6 +29,7 @@ public class FirebaseApiImpl: FirebaseApiProtocol {
     public static let sharedInstance = FirebaseApiImpl()
     
     init() {
+        FirebaseApp.configure()
         Database.database().isPersistenceEnabled = false
         Database.setLoggingEnabled(true)
         self.databaseReferenceRoot = Database.database().reference()

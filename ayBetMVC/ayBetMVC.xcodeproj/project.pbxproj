@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		8B6F084120F9441C002F0673 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8B6F084020F9441C002F0673 /* GoogleService-Info.plist */; };
+		8BA2014D20F9A4D000B4E04F /* MatchHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA2014B20F9A4D000B4E04F /* MatchHeaderView.swift */; };
+		8BA2014E20F9A4D000B4E04F /* MatchHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BA2014C20F9A4D000B4E04F /* MatchHeaderView.xib */; };
+		8BA2015020F9A55400B4E04F /* BetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA2014F20F9A55400B4E04F /* BetListViewController.swift */; };
+		8BA2015220F9A5F900B4E04F /* BetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA2015120F9A5F900B4E04F /* BetTableViewCell.swift */; };
+		8BA2015520F9AD7200B4E04F /* PlaceBetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA2015420F9AD7200B4E04F /* PlaceBetViewController.swift */; };
 		9A26F65520F8FA1600610D76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A26F65420F8FA1600610D76 /* AppDelegate.swift */; };
 		9A26F65720F8FA1600610D76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A26F65620F8FA1600610D76 /* ViewController.swift */; };
 		9A26F65A20F8FA1600610D76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A26F65820F8FA1600610D76 /* Main.storyboard */; };
@@ -24,6 +29,11 @@
 		379810047D1FC728CC23258F /* Pods-ayBetMVC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ayBetMVC.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-ayBetMVC/Pods-ayBetMVC.debug.xcconfig"; sourceTree = "<group>"; };
 		8B6F083E20F94193002F0673 /* Data.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Data.framework; sourceTree = "<group>"; };
 		8B6F084020F9441C002F0673 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8BA2014B20F9A4D000B4E04F /* MatchHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchHeaderView.swift; sourceTree = "<group>"; };
+		8BA2014C20F9A4D000B4E04F /* MatchHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MatchHeaderView.xib; sourceTree = "<group>"; };
+		8BA2014F20F9A55400B4E04F /* BetListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetListViewController.swift; sourceTree = "<group>"; };
+		8BA2015120F9A5F900B4E04F /* BetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BetTableViewCell.swift; sourceTree = "<group>"; };
+		8BA2015420F9AD7200B4E04F /* PlaceBetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceBetViewController.swift; sourceTree = "<group>"; };
 		9A26F65120F8FA1600610D76 /* ayBetMVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ayBetMVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A26F65420F8FA1600610D76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A26F65620F8FA1600610D76 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +68,41 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		8BA2014820F9A45900B4E04F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8BA2015320F9AD4000B4E04F /* PlaceBet */,
+				8BA2015120F9A5F900B4E04F /* BetTableViewCell.swift */,
+				8BA2014F20F9A55400B4E04F /* BetListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8BA2014920F9A46000B4E04F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8BA2014A20F9A4D000B4E04F /* Xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8BA2014A20F9A4D000B4E04F /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				8BA2014B20F9A4D000B4E04F /* MatchHeaderView.swift */,
+				8BA2014C20F9A4D000B4E04F /* MatchHeaderView.xib */,
+			);
+			path = Xib;
+			sourceTree = "<group>";
+		};
+		8BA2015320F9AD4000B4E04F /* PlaceBet */ = {
+			isa = PBXGroup;
+			children = (
+				8BA2015420F9AD7200B4E04F /* PlaceBetViewController.swift */,
+			);
+			path = PlaceBet;
+			sourceTree = "<group>";
+		};
 		9A26F64820F8FA1600610D76 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +125,8 @@
 		9A26F65320F8FA1600610D76 /* ayBetMVC */ = {
 			isa = PBXGroup;
 			children = (
+				8BA2014920F9A46000B4E04F /* View */,
+				8BA2014820F9A45900B4E04F /* Controller */,
 				8B6F084020F9441C002F0673 /* GoogleService-Info.plist */,
 				9A26F65420F8FA1600610D76 /* AppDelegate.swift */,
 				9A26F65620F8FA1600610D76 /* ViewController.swift */,
@@ -129,6 +176,8 @@
 				9A26F64D20F8FA1600610D76 /* Sources */,
 				9A26F64E20F8FA1600610D76 /* Frameworks */,
 				9A26F64F20F8FA1600610D76 /* Resources */,
+				531929C3CD77CADC61A24D91 /* [CP] Embed Pods Frameworks */,
+				21371FFCAE6F607109FB943B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -180,6 +229,7 @@
 				9A26F65F20F8FA1700610D76 /* LaunchScreen.storyboard in Resources */,
 				9A26F65C20F8FA1700610D76 /* Assets.xcassets in Resources */,
 				8B6F084120F9441C002F0673 /* GoogleService-Info.plist in Resources */,
+				8BA2014E20F9A4D000B4E04F /* MatchHeaderView.xib in Resources */,
 				9A26F65A20F8FA1600610D76 /* Main.storyboard in Resources */,
 				9A26F69620F90C9000610D76 /* GoogleService-Info.plist in Resources */,
 			);
@@ -188,6 +238,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		21371FFCAE6F607109FB943B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-ayBetMVC/Pods-ayBetMVC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		531929C3CD77CADC61A24D91 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-ayBetMVC/Pods-ayBetMVC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E0A7F1D69780294705CD65B7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -213,9 +293,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BA2015020F9A55400B4E04F /* BetListViewController.swift in Sources */,
 				9A26F6CB20F95E0B00610D76 /* Model.swift in Sources */,
+				8BA2014D20F9A4D000B4E04F /* MatchHeaderView.swift in Sources */,
 				9A26F6CC20F95E0B00610D76 /* FirebaseApiImpl.swift in Sources */,
 				9A26F65720F8FA1600610D76 /* ViewController.swift in Sources */,
+				8BA2015220F9A5F900B4E04F /* BetTableViewCell.swift in Sources */,
+				8BA2015520F9AD7200B4E04F /* PlaceBetViewController.swift in Sources */,
 				9A26F65520F8FA1600610D76 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,7 +453,10 @@
 				);
 				INFOPLIST_FILE = ayBetMVC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.everis.ieeeTalk.demo.ayBet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -390,7 +477,10 @@
 				);
 				INFOPLIST_FILE = ayBetMVC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.everis.ieeeTalk.demo.ayBet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
