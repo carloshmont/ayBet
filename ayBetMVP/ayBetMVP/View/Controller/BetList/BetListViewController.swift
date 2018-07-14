@@ -14,6 +14,7 @@ import UIKit
 }
 
 protocol BetListViewProtocol: class, ViewProtocol {
+    func setViewHeader(withMatch match: String, andRatio ratio: String)
     func updateView()
 }
 
@@ -23,11 +24,14 @@ class BetListViewController: UIViewController {
     
     @IBOutlet fileprivate weak var betListTableView: UITableView!
     
+    var matchTitle: String!
+    var matchRatio: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         initialSetup()
         configureView()
-        presenter.getBetList()
+        presenter.viewDidLoad()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -46,6 +50,10 @@ extension BetListViewController: BetListViewProtocol {
         betListTableView.reloadData()
     }
     
+    func setViewHeader(withMatch match: String, andRatio ratio: String) {
+        self.matchTitle = match
+        self.matchRatio = ratio
+    }
 }
 
 // MARK:- Table view delegate methods
@@ -53,6 +61,8 @@ extension BetListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let nib = UINib(nibName: "MatchHeaderView", bundle: nil)
         guard let view = nib.instantiate(withOwner: self, options: nil).first as? MatchHeaderView else { return nil }
+        view.title = self.matchTitle
+        view.ratio = self.matchRatio
         return view
     }
     

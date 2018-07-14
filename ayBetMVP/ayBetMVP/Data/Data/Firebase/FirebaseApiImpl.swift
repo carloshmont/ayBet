@@ -36,15 +36,15 @@ public class FirebaseApiImpl: FirebaseApiProtocol {
     
     
    public func getMatch(completion: @escaping updateMatchcompletion) {
-                self.databaseReferenceRoot?
-                    .child(Child.match.rawValue)
-                    .observe(.value, with: { snapshot in
-                        if let snapshotValue = snapshot.value as? [String: AnyObject] {
-                          
-                            completion(Match(title: snapshotValue["title"] as! String, ratio: snapshotValue["ratio"] as! String))
-                         
-                        }
-                        })
+        self.databaseReferenceRoot?
+            .child(Child.match.rawValue)
+            .observe(.value, with: { snapshot in
+                if let snapshotValue = snapshot.value as? [String: AnyObject] {
+                  
+                    completion(Match(title: snapshotValue["title"] as! String, ratio: snapshotValue["ratio"] as! String))
+                 
+                }
+        })
     }
     
     public func setBet(amount: Double, idTeam: String, user: String, flag: String, completion: @escaping (_ success: Bool?, _ error: Error?) -> Void) {

@@ -10,11 +10,21 @@ import UIKit
 
 class MatchHeaderView: UIView {
 
+    var title: String? {
+        didSet {
+            matchTitleLabel.text = title
+        }
+    }
+    
+    var ratio: String? {
+        didSet {
+            betRatioLabel.text = ratio
+        }
+    }
+    
     @IBOutlet fileprivate weak var matchTitleLabel: UILabel!
     
     @IBOutlet fileprivate weak var betRatioLabel: UILabel!
-    
-    @IBOutlet fileprivate weak var matchImageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
