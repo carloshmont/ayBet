@@ -8,9 +8,12 @@
 
 import Foundation
 
-protocol BetListViewPresenterProtocol {
+protocol PresenterProtocol {
+    func viewDidLoad()
+}
+
+protocol BetListViewPresenterProtocol: PresenterProtocol {
     func placeBet()
-    func getBetList()
     func getBetCount() -> Int
     func getBetUser(forIndex index: Int) -> String
     func getBetAmount(forIndex index: Int) -> Double
@@ -31,6 +34,10 @@ class BetListViewPresenter {
         self.router = router
     }
     
+    func viewDidLoad() {
+        getBetList()
+        getMatchData()
+    }
 }
 
 // MARK:- Presenter methods
@@ -61,7 +68,14 @@ extension BetListViewPresenter: BetListViewPresenterProtocol {
 // MARK:- Service Call
 extension BetListViewPresenter {
     
-    func getBetList() {
+    private func getMatchData() {
+        service.getMatch { (match) in
+            self.view?.setViewHeader(withMatch: match.title, andRatio: match.ratio)
+            self.view?.updateView()
+        }
+    }
+    
+    private func getBetList() {
         service.getBetsForMatch { (betList) in
             self.betList = betList
             self.view?.updateView()
