@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import Data
-
 
 class ViewController: UIViewController {
 
@@ -20,7 +18,6 @@ class ViewController: UIViewController {
 
     @IBAction func clickBtnSetValue(_ sender: Any) {
         
-        FirebaseApiImpl.sharedInstance.setBet(amount: 20, idTeam: 1)
     }
     
     

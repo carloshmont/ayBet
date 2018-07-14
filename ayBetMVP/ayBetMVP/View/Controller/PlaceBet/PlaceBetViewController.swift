@@ -28,12 +28,36 @@ class PlaceBetViewController: UIViewController {
 
     @IBAction func didTapPlaceBetButton(_ sender: UIButton) {
         guard let amount = amountTextField.text else { return }
-        presenter.placeBet(withAmmount: amount, andTeam: "")
+        presenter.placeBet(withAmmount: amount)
     }
     
     @IBAction func didSelectOption(_ sender: UISegmentedControl) {
-        
+        presenter.didSelectTeam(withIndex: sender.selectedSegmentIndex)
     }
+    
+    @IBAction func didTapOutsideKeyboard(_ sender: UITapGestureRecognizer) {
+        self.view.endEditing(true)
+    }
+    
+    
+}
+
+extension PlaceBetViewController: UITextFieldDelegate {
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        UIView.animate(withDuration: 0.3, animations: {
+            self.view.frame = CGRect(x:self.view.frame.origin.x, y:self.view.frame.origin.y - 100, width:self.view.frame.size.width, height:self.view.frame.size.height);
+            
+        })
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        UIView.animate(withDuration: 0.3, animations: {
+            self.view.frame = CGRect(x: self.view.frame.origin.x, y: self.view.frame.origin.y + 100, width: self.view.frame.size.width, height: self.view.frame.size.height);
+            
+        })
+    }
+    
 }
 
 // MARK:- View protocol methods
@@ -45,7 +69,7 @@ extension PlaceBetViewController: PlaceBetViewProtocol {
 extension PlaceBetViewController {
     
     private func initialSetup() {
-        
+        amountTextField.delegate = self
     }
     
     private func configureView() {

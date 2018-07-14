@@ -27,6 +27,11 @@ class BetListViewController: UIViewController {
         super.viewDidLoad()
         initialSetup()
         configureView()
+        presenter.getBetList()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
     }
 
     @IBAction func didTapPlaceBet(_ sender: UIBarButtonItem) {
@@ -38,7 +43,7 @@ class BetListViewController: UIViewController {
 extension BetListViewController: BetListViewProtocol {
     
     func updateView() {
-        
+        betListTableView.reloadData()
     }
     
 }
@@ -68,11 +73,15 @@ extension BetListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return presenter.getBetCount()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return tableView.dequeueReusableCell(withIdentifier: "betCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "betCell", for: indexPath) as! BetTableViewCell
+        cell.user = presenter.getBetUser(forIndex: indexPath.row)
+        cell.amount = "S/ \(presenter.getBetAmount(forIndex: indexPath.row))"
+        cell.flag = presenter.getFlag(forIndex: indexPath.row)
+        return cell
     }
     
 }

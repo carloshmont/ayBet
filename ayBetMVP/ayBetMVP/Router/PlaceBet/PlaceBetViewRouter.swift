@@ -10,7 +10,7 @@ import Foundation
 
 protocol PlaceBetViewRouterProcotol {
     var currentView: PlaceBetViewController? { get set }
-    
+    func routeToRoot()
 }
 
 class PlaceBetViewRouter: PlaceBetViewRouterProcotol {
@@ -19,5 +19,10 @@ class PlaceBetViewRouter: PlaceBetViewRouterProcotol {
     
     init(withView view: PlaceBetViewController) {
         self.currentView = view
+    }
+    
+    func routeToRoot() {
+        guard let view = currentView else { return }
+        view.dismiss(animated: true, completion: nil)
     }
 }
